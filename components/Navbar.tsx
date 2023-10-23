@@ -3,14 +3,14 @@ import Image from "next/image"
 const Navbar = () => {
   return (
     <>
-      <header className="w-full mb-8 p-4 dark:bg-gray-800 dark:text-gray-100">
-        <div className="container flex justify-between h-16 mx-auto">
+      <header className="w-full fixed z-10 p-2 bg-blend-color-burn backdrop-blur-sm bg-pink-100/80 dark:text-gray-100">
+        <div className="container z-10 flex justify-between h-16 mx-auto bg-transparent ">
             <Image 
               src="/logo_cdimex.png"
               alt="Cdimex SA"
               width={200}
               height={30}
-              className="flex items-center p-2 dark:invert"
+              className="flex items-center p-2"
             />
           {/*
           <ul className="items-stretch hidden space-x-3 md:flex">

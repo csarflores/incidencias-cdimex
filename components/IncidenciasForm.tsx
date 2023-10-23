@@ -80,11 +80,11 @@ const IncidenciasForm = () => {
       ) : null}
       <form id="incidencias_form"
         action="https://script.google.com/macros/s/AKfycbw_FyRuIyexQLmbALgGB75OENwike8wqsgcQLqwMoVPWfj4ME0z_mSa8KHQXutOS7MM/exec"
-        method="post" name="incidencias_form" className="container flex flex-col mx-auto space-y-12 max-w-xl">
+        method="post" name="incidencias_form" className="container flex flex-col mx-auto mt-8 space-y-12 max-w-xl">
         <header className="flex items-center justify-center h-16 px-4 mx-auto w-full rounded bg-pink-200 dark:bg-gray-900">
           <h1 className="uppercase font-bold center">Registro de incidencias</h1>
         </header>
-        <fieldset className="flex grid-cols-4 gap-6 p-14 justify-center rounded-md shadow-sm bg-pink-200 dark:bg-gray-900">
+        <fieldset className="flex grid-cols-4 gap-6 p-8 lg:p-14 justify-center rounded-md shadow-sm bg-pink-200 dark:bg-gray-900">
           <input id="marca_temporal" name="marca_temporal" type="hidden" placeholder="Nombre y apellido" value={new Date().toISOString().slice(0, 10)} />
           <div className="grid grid-cols-6 gap-4 col-span-full lg:col-span-3">
             <div className="col-span-full">
@@ -181,16 +181,16 @@ const IncidenciasForm = () => {
               />
             </div>
             <div className="flex grid-flow-col grid-cols-2 w-full gap-4">
-              <div className="flex-col w-[6.8rem] lg:w-56 hidden">
+              <div className="flex-col w-[7.8rem] lg:w-56 hidden">
                 <input id="porcentaje" name="porcentaje" type="text" placeholder="" value=""
                   className="w-full p-2 rounded-md focus:ring focus:ri focus:ri dark:border-gray-700 dark:text-gray-900" />
               </div>
-              <div className="flex w-[6.8rem] lg:w-56 flex-col">
+              <div className="flex w-[7.8rem] lg:w-56 flex-col">
                 <label htmlFor="cantidad" className="text-sm">Cantidad</label>
                 <input id="cantidad" name="cantidad" type="number" placeholder=""
                   className="p-2 rounded-md focus:ring focus:ri focus:ri dark:border-gray-700 dark:text-gray-900" />
               </div>
-              <div className="flex w-[6.8rem] lg:w-56 flex-col">
+              <div className="flex w-[7.8rem] lg:w-56 flex-col">
                 <label htmlFor="importe" className="text-sm">Importe</label>
                 <input id="importe" name="importe" type="number" placeholder=""
                   className="p-2 rounded-md focus:ring focus:ri focus:ri dark:border-gray-700 dark:text-gray-900" />
