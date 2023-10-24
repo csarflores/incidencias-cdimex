@@ -3,11 +3,14 @@ import { useEffect, useState } from "react";
 import { Gerentes, Empleados } from "@/data/Empleados";
 import { Incidencias } from "@/data/Incidencias";
 
+// Esta URL surge luego de implementar el App Script de Google Sheet. Copiar la URL de Aplicación Web
+const url_app_web = 'https://script.google.com/macros/s/AKfycbw_FyRuIyexQLmbALgGB75OENwike8wqsgcQLqwMoVPWfj4ME0z_mSa8KHQXutOS7MM/exec'
+
 const IncidenciasForm = () => {
 
   //Script para limpiar el formulario una vez enviado los datosa Google Sheet
   useEffect(() => {
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbw_FyRuIyexQLmbALgGB75OENwike8wqsgcQLqwMoVPWfj4ME0z_mSa8KHQXutOS7MM/exec';
+    const scriptURL = url_app_web;
     const form = document.forms['incidencias_form'];
 
     const handleSubmit = async (e) => {
@@ -79,7 +82,7 @@ const IncidenciasForm = () => {
         </div>
       ) : null}
       <form id="incidencias_form"
-        action="https://script.google.com/macros/s/AKfycbw_FyRuIyexQLmbALgGB75OENwike8wqsgcQLqwMoVPWfj4ME0z_mSa8KHQXutOS7MM/exec"
+        action={url_app_web}
         method="post" name="incidencias_form" className="container flex flex-col mx-auto mt-8 space-y-12 max-w-xl">
         <header className="flex items-center justify-center h-16 px-4 mx-auto w-full rounded bg-pink-200 dark:bg-gray-900">
           <h1 className="uppercase font-bold center">Registro de incidencias</h1>
