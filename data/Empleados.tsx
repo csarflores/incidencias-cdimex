@@ -78,8 +78,8 @@ export const Gerentes = [
   },
   {
    "empresa": "Cdimex SA",
-   "name": "PAOLA BERTONA",
-   "legajo": 0,
+   "name": "BERTONA, PAOLA CARMEN",
+   "legajo": 3028,
    "areaResponsable": "Marcas",
    "active": true
   },

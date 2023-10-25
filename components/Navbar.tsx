@@ -5,13 +5,15 @@ const Navbar = () => {
     <>
       <header className="w-full fixed z-10 p-2 bg-blend-color-burn backdrop-blur-sm bg-pink-100/80 dark:text-gray-100">
         <div className="container z-10 flex justify-between h-16 mx-auto bg-transparent ">
-            <Image 
+          <div className="h-4/5">
+            <Image
               src="/logo_cdimex.png"
               alt="Cdimex SA"
               width={200}
               height={30}
               className="flex items-center p-2"
             />
+          </div>
           {/*
           <ul className="items-stretch hidden space-x-3 md:flex">
             <li className="flex">
