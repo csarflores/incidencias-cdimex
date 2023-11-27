@@ -3,7 +3,7 @@ FROM node:alpine
 #nombre del directorio dentro del contenedor
 WORKDIR /app
 #copie todos los archivos que comiencen por package y terminen con json
-COPY package*.json .
+COPY package*.json ./
 #solo instala todas las dependencias
 RUN npm install
 #copia todos los archivos del proyecto en el contenedor
